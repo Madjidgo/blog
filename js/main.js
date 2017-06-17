@@ -1,21 +1,26 @@
 
+// button search
 function myFunction() {
     document.getElementById("button1");
     alert('Salaud');
 }
+// end button
 
+
+// button times
 function times(){
 	var date = new Date();
-	alert(date);
-	window.onload = start() ;
+	alert(date);	
 } 
+// end button times
+
 
 // compteur//
 var compte = 0;
 
 function chrono()
 {
-  document.getElementById("chrono").innerHTML = "vous avez passé "+" "+compte ;
+  document.getElementById("chrono").innerHTML = "vous avez passé "+" "+compte+ " "+"s" ;
   compte++;
 }
 
