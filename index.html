@@ -13,30 +13,30 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+       
     </head>
     <body>
             
                 
             <!-- start /header -->
-        <header id="header" class="">
-            <nav>
-                <ul class="nav  justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">BLOGTECH</a>
-                  </li>
-                </ul>
-                </nav>
-                <hr>
+        <header  class="container">
+           <nav class="navbar navbar-toggleable-md navbar-light bg-faded ">
+           
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">BlogTech</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Blog<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Article1</a>
+      <a class="nav-item nav-link" href="#">Article2</a>
+      <a class="nav-item nav-link " href="#">Article3</a>
+    </div>
+   
+  </div>
+</nav>
+              
         </header>
         <!-- end header -->
 
@@ -222,22 +222,24 @@
                 
             </div>
            </article>
-        </section>d
+        </section>
 
         <!-- start plagination -->
-            <nav aria-label="Page navigation example">
+            <nav aria-label="Page navigation  ">
                   <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
+                    <li class="page-item ">
                       <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      <li class="page-item active">
+                      <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
                     <li class="page-item">
                       <a class="page-link" href="#">Next</a>
                     </li>
                   </ul>
-</nav>
+            </nav>
 
         <!-- end plagination -->
 
@@ -245,18 +247,60 @@
         <!-- start footer -->
 
         <footer>
-            <div >
-            <FORM name="horloge">
-<INPUT TYPE="text" NAME="display" SIZE=15 VALUE ="" placeholder=" click times" onclick="times()"></INPUT>
-</FORM> 
-
-            </div>
-
-            <div class="col-lg-8 my-2" >
-            <img class=" img-fluid hi" src="img/index111.jpeg" alt="Third slide">
-            </div>
-
             
+     
+            <!-- start form -->
+            <div class="container mt-5">
+                        <div class="row">
+                          <div class="col-md-4 col-sm-4">
+                            <h4 class="text-uppercase">Madjid Goumidi</h4>
+                            <p>94 rue Leon Marlot,<br> Simplon Roubaix</p>
+                            <address>
+                              <p><a href="mailto:madjidgo@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>: Madjid</a></p>
+                            </address>
+                            <div class="form-group col-md-12 col-sm-12" name="horloge">
+                                 <button TYPE="submit" class="btn btn-small btn-dark-solid" onclick="times()">Click times</button>
+                            </div>
+
+                            <!--  forms -->
+                          </div>
+                          <div class="col-md-8 col-sm-8">
+                            <h4 class="text-uppercase">Avez une question?</h4>
+                            
+                            <form action="http://teamvoy.net/message_contact_us" method="post" class="js-send-contact_form contact-comments show m-top-50">
+                              <div class="row">
+                                <div class="col-md-6 form-group col-sm-6">
+                                  <label>Nom *</label>
+                                  <input id="name" name="name" maxlength="100" required="" class="form-control" type="text">
+                                </div>
+                                <div class="col-md-6 form-group col-sm-6">
+                                  <label>Email *</label>
+                                  <input id="email" name="email" maxlength="100" required="" class="form-control" type="email">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-6">
+                                  <label>Phone</label>
+                                  <input id="phone" name="phone" maxlength="100" class="form-control" type="text">
+                                </div>
+                                <div class="form-group col-md-6 col-sm-6">
+                                  <label>Sujet</label>
+                                  <input id="subject" name="subject" maxlength="100" class="form-control" type="text">
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12">
+                                  <label>Comments</label>
+                                  <textarea id="comments" name="comments" rows="6" class="cmnt-text form-control"></textarea>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12">
+                                  <button type="submit" class="btn btn-small btn-dark-solid" id="button2" onclick="myFunction2()">Envoyer</button>
+                                </div>
+
+                              </div>
+                            </form>
+                          </div>
+                          <p>copyright.</p>
+                        </div>
+                      </div> 
+                      <!-- end forms -->
+
         </footer>
         <!-- end footer -->
 
@@ -290,5 +334,6 @@
         </script>
         <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="js/main.js"> 
+         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </body>
 </html>

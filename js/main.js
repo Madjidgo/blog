@@ -1,10 +1,19 @@
 
-// button search
+// button button1
 function myFunction() {
     document.getElementById("button1");
     alert('Salaud');
 }
+
+
 // end button
+
+// start button2 form
+function myFunction2() {
+	document.getElementById("button2");
+	alert("Un peu de respect");
+}
+// end button2 form
 
 
 // button times
