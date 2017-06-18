@@ -13,7 +13,7 @@ function myFunction2() {
 	document.getElementById("button2");
 	alert("Un peu de respect");
 }
-// end button2 form
+// end button2 form	
 
 
 // button times
@@ -41,6 +41,27 @@ function start()
 window.onload = start
 
 // end compteur//
+
+
+   //On accède à notre premier paragraphe
+        var p1 = document.querySelector('p');
+        
+        //On accroche un gestionnaire d'évènements à p1
+        p1.addEventListener('mousedown',changeTexte);
+        p1.addEventListener('mouseup',reset1)
+        
+        /*On construit notre fonction changeTexte qui ne sera
+         *exécutée que lors du déclenchement de l'évènement*/
+        function changeTexte(){
+            this.innerHTML = '<strong>Bravo !</strong>';
+            this.style.color = 'orange';
+        };
+
+        function reset1(){
+            this.innerHTML = '<strong>A travers ce blog, nous souhaitons présenter une technologie qui marie culture et digitale. Nous souhaitons analyser l’impact des nouvelles technologies sur votre quotidien  et  vous faire découvirir la formation Simplon  .</strong>';
+            this.style.color = '';
+        };
+
 
 
 
